@@ -5,7 +5,7 @@ const mongoose =require('mongoose');
 const PORT=4000
 
 const app= express();
-mongoose.connect('mongodb+srv://admin:admin@gql-ninja.ud5utf3.mongodb.net/?retryWrites=true&w=majority'
+mongoose.connect("<mongoDBURL>"
 );
 mongoose.connection.once('open',()=>{
     console.log("DB connection established")
